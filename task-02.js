@@ -10,11 +10,13 @@
 
 // logItems([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
 
-const users = ["Mango", "Poly", "Ajax", "Lux", "Jay", "Kong"];
 
-for (const user of users) {
-    const arrIndex = users.indexOf(user);
-    console.log(`${arrIndex + 1} - ${user}`);
+const logItems = function (array) {
+    for (const elem of array) {
+        const arrIndex = array.indexOf(elem);
+        console.log(`${arrIndex + 1} - ${elem}`);
+    }
+
 }
 
 logItems(['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong']);

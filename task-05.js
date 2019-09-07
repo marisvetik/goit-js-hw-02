@@ -22,12 +22,14 @@
 // );
 // // вернется форматированная строка
 
-function formatString(string) {
-    let strSplit = string.split(' ');
+const formatString = function (string) {
+    // let strSplit = string.split('');
     let size = 40;
-    if (strSplit.length >= size) {
-        strSplit.slice(0, size) + '...'
-    }
+    const strSplit = string.length >= size ?
+        string.substring(0, size) + "..." :
+        string;
+
+    return strSplit;
 }
 
 console.log(formatString('Curabitur ligula sapien, tincidunt non.'));

@@ -16,6 +16,7 @@ let input;
 const numbers = [];
 let total = 0;
 
+
 do {
     input = prompt('Пожалуйста введите число');
     if (Number.isNaN(Number(input))) {

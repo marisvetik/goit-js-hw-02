@@ -25,11 +25,10 @@
 const formatString = function (string) {
     // let strSplit = string.split('');
     let size = 40;
-    const strSplit = string.length >= size ?
+    return string.length >= size ?
         string.substring(0, size) + "..." :
         string;
 
-    return strSplit;
 }
 
 console.log(formatString('Curabitur ligula sapien, tincidunt non.'));

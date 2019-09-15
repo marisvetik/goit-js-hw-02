@@ -39,9 +39,10 @@ console.log(users);
 
 const userToDelete = "Ajax";
 const indexFinded = users.indexOf(userToDelete);
-users.splice(userToDelete, 1);
+users.splice(indexFinded, 1);
 console.log(users);
 
-const userToInsertBefore = "Jay";
-users.splice(users.indexOf(userToInsertBefore), 0, 'Kong');
+const insertBefore = "Jay";
+const userToInsert = 'Kong';
+users.splice(users.indexOf(insertBefore), 0, userToInsert);
 console.log(users);

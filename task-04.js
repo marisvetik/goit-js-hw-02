@@ -19,6 +19,7 @@ function findLongestWord(string) {
         if (strSplit[i].length > longestWord) {
             longestWord = strSplit[i].length;
             word = strSplit[i];
+
         }
     }
     return word;

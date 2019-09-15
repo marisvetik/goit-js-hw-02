@@ -5,8 +5,12 @@
 // Вызовы функции для проверки работоспособности твоей реализации.
 
 
+// const checkForSpam = function (str) {
+//     return str.toLowerCase().indexOf("sale") !== -1 || str.toLowerCase().indexOf("spam") !== -1;
+// }
+
 const checkForSpam = function (str) {
-    return str.toLowerCase().indexOf("sale") !== -1 || str.toLowerCase().indexOf("spam") !== -1;
+    return str.toLowerCase().includes("sale") || str.toLowerCase().includes("spam");
 }
 
 
